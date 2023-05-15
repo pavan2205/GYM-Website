@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Orbitron:wght@600&family=Poppins:ital,wght@0,500;1,700&family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;800&family=Orbitron:wght@600&family=Poppins:ital,wght@0,500;1,700&family=Quicksand:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --green: #a1e533;
+  --white: #ffffff;
+  --grey: #a6a6a6;
+  --lightblack: #211f1f;
+  --black: #000000;
+}
+
+body{
+  background-color: var(--black);
+}
+
+#landing_page{
+  padding-top: 1.5em;
+  padding-left: 150px;
+}
+
+#header{
+  display: flex;
+  justify-content: space-evenly ;
+  font-size: 25px;
+}
+
+.navbaroptions ul li{
+  display: inline;
+  padding: 0.7em;
+}
+
+.navbaroptions ul li a{
+  text-decoration: none;
+  color: var(--grey);
+  font-size: 20px;
+}
+.navbaroptions ul li a:hover{
+  color: var(--white);
+}
+
+#lpContent{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.leftContent{
+  width: 50%;
+  padding-top:  100px;
+  font-size: 100px;  
+  line-height: 1;
+}
+
+.title,.title span{
+  font-family: 'Bebas Neue', sans-serif;
+}
+.caption{
+  padding-top: 1em;
+  font-size: 18px;
+  line-height: 1.5;
+}
+#joinbtn{
+  padding: 12px 30px;
+  color: var(--black);
+  background-color: var(--green);
+  border-radius: 2rem;
+}
+
+.buttons{
+  display: flex;
+  gap: 30px;
+  /* justify-content: center; */
+  align-items: center;
+  padding-top: 40px;
+}
+
+.buttons button{
+  cursor: pointer;
+}
+.button2{
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+}
+
