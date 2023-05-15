@@ -53,7 +53,7 @@ body{
 .leftContent{
   width: 50%;
   padding-top:  100px;
-  font-size: 100px;  
+  font-size: 110px;  
   line-height: 1;
 }
 
@@ -70,6 +70,14 @@ body{
   color: var(--black);
   background-color: var(--green);
   border-radius: 2rem;
+}
+
+#joinbtn:hover{
+  border-radius: 50px;
+background: #000000;
+color: var(--white);
+box-shadow:  3px 3px 15px #686868,
+             -3px -3px 15px #a3a3a3;
 }
 
 .buttons{
