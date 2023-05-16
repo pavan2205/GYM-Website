@@ -53,6 +53,8 @@ body{
   border-radius: 20px;
   padding: 30px;
   color: white;
+  justify-content: center;
+  align-items: start;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -64,4 +66,15 @@ body{
 .labels{
   color: var(--grey);
   padding-right: 30px;
+}
+.place{
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.submit_button{
+  background-color: var(--green);
+  width: 60%;
+  padding: 15px;
+  border-radius: 10px;
+  margin: auto;
 }

@@ -62,11 +62,6 @@ body{
   line-height: 1;
 }
 
-.title{
-  padding-bottom: 0.7em;
-}
-
-
 .title,.title span{
   font-family: 'Bebas Neue', sans-serif;
 }
@@ -158,6 +153,10 @@ box-shadow:  3px 3px 15px #686868,
   color: var(--black);
 }
 
+.services{
+  padding-top: 5.5em;
+}
+
 .services-title{
   font-size: 18px;
   color: var(--white);
@@ -235,7 +234,7 @@ box-shadow:  3px 3px 15px #686868,
   flex-direction: column;
   justify-content: space-between;
   border-top-right-radius: 15%;
-  height: 650px;
+  height: 600px;
   width: 400px;
 }
 .pricing_cards_Container{
@@ -271,11 +270,9 @@ box-shadow:  3px 3px 15px #686868,
 .pricing-service-list{
   font-size: 18px;
   color: var(--white);
-  padding:7rem 10px 3rem 10px ;
+  padding:2rem 10px 3rem 10px ;
   text-align: start;
 }
 .pricing-service-list li{
   padding-top: 5px;
 }
-
-

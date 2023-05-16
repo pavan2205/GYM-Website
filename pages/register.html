@@ -11,7 +11,7 @@
   <section class="registration">
     <div class="left_content">
       <span class="title register_heading" style="color:var(--green)">REGISTER</span>
-      <form action="" class="registration_form">
+      <form action="../index.html" class="registration_form" >
         <div class="name">
           <label for="" class="labels">Name:</label>
           <input type="text" placeholder="first" class="input_box">
@@ -34,8 +34,33 @@
         </div>
         <div class="address">
           <label for="" class="labels">Address:</label>
-          <input type="text" placeholder="Street Address" class="input_box">
+          <input type="text" placeholder="Street Address" class="input_box" style="width: 70%;">
+          <div class="place">
+            <input type="text" placeholder="City" class="input_box" >
+            <input type="text" placeholder="Country" class="input_box" >
+          </div>
         </div>
+        <div class="contacts">
+          <label for="" class="labels">Email:</label>
+          <input type="email" placeholder="Email" class="input_box" style="width: 70%;">
+          <label for="" class="labels">Phone:</label>
+          <input type="text" placeholder="Phone" class="input_box" style="width: 70%;margin-top: 25px;">
+        </div>
+        <div class="question1">
+          <label for="" class="labels" style="display: block;">Do you require a personal trainer?</label>
+          <input type="radio" name="" id="" style="accent-color:var(--green);">
+          <label for="" class="labels" style="color: white;">Yes</label>
+          <input type="radio" name="" id="" style="accent-color:var(--green);">
+          <label for="" class="labels"style="color: white;">NO</label>
+        </div>
+        <div class="question2">
+          <label for="" class="labels" style="display: block;">Have you been in a Gym before?</label>
+          <input type="radio" name="" id="" style="accent-color:var(--green);">
+          <label for="" class="labels" style="color: white;">Yes</label>
+          <input type="radio" name="" id="" style="accent-color:var(--green);">
+          <label for="" class="labels"style="color: white;">NO</label>
+        </div>
+        <button type="submit" class="submit_button">Register</button>
       </form>
     </div>
     <div class="right_content">
