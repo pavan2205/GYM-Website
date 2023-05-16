@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -19,15 +20,16 @@ body{
   background-color: var(--black);
 }
 
-#landing_page{
-  padding-top: 1.5em;
-  padding-left: 150px;
-}
-
 #header{
   display: flex;
+  padding: 0.8em;
+  width: 100%;
+  position: fixed;
+  background-color: var(--black);
   justify-content: space-evenly ;
   font-size: 25px;
+  z-index: 100;
+  box-shadow: 0px 8px 8px -8px rgba(177, 177, 177, 0.5);
 }
 
 .navbaroptions ul li{
@@ -49,6 +51,9 @@ body{
   width: 100%;
   justify-content: space-between;
   flex-direction: row;
+  padding-top: 3.5em;
+  padding-left: 140px;
+  padding-bottom: 2.5em;
 }
 .leftContent{
   width: 50%;
@@ -100,3 +105,98 @@ box-shadow:  3px 3px 15px #686868,
   justify-content: center;
 }
 
+.services{
+  padding-top: 1.5em;
+  padding-bottom: 2.5em;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.services .heading{
+  font-size: 70px;
+  width: 40%;
+}
+
+.services-card{
+  margin-top: 4em;
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background: var(--lightblack);
+  height: 400px;
+  width: 350px;
+  border-radius: 10px;
+  border: 3px solid var(--green);
+  border-top-right-radius: 50px;  
+}
+
+.card:hover,.card:hover>.services-subtitle,.card:hover>.services-title,.card:hover>span{
+  background-color: var(--green);
+  color: var(--black);
+}
+
+.services-title{
+  font-size: 18px;
+  color: var(--white);
+}
+
+.services-subtitle{
+  flex: 2;
+  font-size: 16px;
+  padding-top: 2em;
+  color: var(--grey);
+}
+.services span{
+  color: var(--green);
+  font-weight:normal;
+}
+.services-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 1.5em;
+  border-radius: 8px;
+  background-color: rgb(60, 60, 60);
+}
+
+.gallery{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 100px;
+}
+.gallery-title{
+  font-size: 60px;
+  width: 70%;
+  text-align: center;
+}
+.achievements{
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between;
+}
+.left-content{
+  width: 40%;
+}
+.right-content{
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+.contents{
+  width: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
