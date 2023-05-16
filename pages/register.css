@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Orbitron:wght@600&family=Poppins:ital,wght@0,500;1,700&family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;800&family=Orbitron:wght@600&family=Poppins:ital,wght@0,500;1,700&family=Quicksand:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --green: #a1e533;
+  --white: #ffffff;
+  --grey: #a6a6a6;
+  --lightblack: #211f1f;
+  --black: #000000;
+}
+
+body{
+  background-color: var(--black);
+}
+
+.registration{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.left_content{
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.right_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.register_heading{
+  font-size: 50px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+.registration_form{
+  background-color: var(--lightblack);
+  height: 100%;
+  width: 80%;
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.input_box{
+  border: none;
+  color: white;background-color: transparent;outline:none;margin-left: 10px; border-bottom: 2px solid var(--green);
+}
+.labels{
+  color: var(--grey);
+  padding-right: 30px;
+}
