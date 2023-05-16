@@ -175,6 +175,7 @@ box-shadow:  3px 3px 15px #686868,
   padding-left: 150px;
   padding-right: 150px;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 .gallery-title{
   font-size: 60px;
@@ -184,7 +185,7 @@ box-shadow:  3px 3px 15px #686868,
 .achievements{
   display: flex;
   flex-direction: row ;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .left-content{
   width: 40%;
@@ -199,4 +200,10 @@ box-shadow:  3px 3px 15px #686868,
   text-align: center;
   display: flex;
   flex-direction: column;
+}
+.gym_video{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
