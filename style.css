@@ -7,13 +7,29 @@
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
-
 :root {
   --green: #a1e533;
   --white: #ffffff;
   --grey: #a6a6a6;
   --lightblack: #211f1f;
   --black: #000000;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--lightblack);
+  
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--green);
+  border-radius: 5px;
 }
 
 body{
@@ -62,6 +78,10 @@ body{
   line-height: 1;
 }
 
+.title{
+  margin-bottom: 50px;
+}
+
 .title,.title span{
   font-family: 'Bebas Neue', sans-serif;
 }
@@ -106,7 +126,7 @@ box-shadow:  3px 3px 15px #686868,
 }
 
 .services{
-  padding-top: 1.5em;
+  padding-top: 6.5em;
   padding-bottom: 2.5em;
   padding-left: 120px;
   padding-right: 120px;
@@ -153,10 +173,6 @@ box-shadow:  3px 3px 15px #686868,
   color: var(--black);
 }
 
-.services{
-  padding-top: 5.5em;
-}
-
 .services-title{
   font-size: 18px;
   color: var(--white);
@@ -194,6 +210,7 @@ box-shadow:  3px 3px 15px #686868,
   padding-bottom: 100px;
 }
 .gallery-title{
+  margin-bottom: 0px;
   font-size: 60px;
   width: 50%;
   text-align: center;
@@ -270,9 +287,76 @@ box-shadow:  3px 3px 15px #686868,
 .pricing-service-list{
   font-size: 18px;
   color: var(--white);
-  padding:2rem 10px 3rem 10px ;
+  padding:3rem 10px 1rem 10px ;
   text-align: start;
 }
 .pricing-service-list li{
   padding-top: 5px;
 }
+
+form{
+  margin-top: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+input,textarea{
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--green);
+  resize: none;
+  color: var(--white);
+}
+.contact-container{
+  width: 60rem;
+  margin:8rem 0rem 8rem 0rem;
+}
+.contact{
+  display: flex;
+  justify-content: center;
+}
+
+.contact-title{
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+
+footer{
+  background: var(--green);
+  padding:3rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 10rem;
+}
+
+.footer__logo{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: inline-block;
+  color: var(--black);
+}
+
+.permalinks{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto 3rem;
+  cursor: pointer;
+
+}
+.footer__copyright{
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+  color: var(--black);
+
+}
+.permalinks li > a{
+  color: var(--black);
+}
+
