@@ -17,11 +17,12 @@ function manipulateQnt() {
   });
 }
 manipulateQnt();
-var cartItems = [
-  {
-    product: "",
-    price: "",
-    quantity: "",
-    total: "",
-  },
-];
+var addedCartItems = [];
+
+export function addedtoCart(cartItems){
+  addedCartItems = cartItems;
+}
+
+addedCartItems.forEach((val)=>console.log(val));
+
+
