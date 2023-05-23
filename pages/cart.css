@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Orbitron:wght@600&family=Poppins:ital,wght@0,500;1,700&family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;800&family=Orbitron:wght@600&family=Poppins:ital,wght@0,500;1,700&family=Quicksand:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+
+:root {
+  --green: #a1e533;
+  --white: #ffffff;
+  --grey: #a6a6a6;
+  --lightblack: #211f1f;
+  --black: #000000;
+}
+
+body{
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 98.5vw;
+  height: 100vh;
+}
+.cart-container{
+  width: 95%;
+  height: 95%;
+  border-radius: 30px;
+  padding: 20px;
+  color: var(--white);
+}
+.cart-title{
+  font-size: 70px;
+  text-align: center;
+  font-family: 'bebas neue',sans-serif;
+}
+
+.cart-contents{
+  gap: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.cart-leftproducts{
+  color: var(--white);
+  width: 65%;
+}
+
+
+
+table{
+  width: 100%;
+}
+
+.cart-info{
+  display: flex;
+}
+
+th{
+  text-align: left;
+  padding: 5px;
+  color: var(--green);
+}
+td{
+  padding: 10px 5px;
+}
+
+td img{
+  width: 80px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.cart-invoice{
+  width: 25%;
+}
+.card-invoice table{
+  background-color: var(--lightblack);
+}
+.invoice-title{
+  color: var(--green);
+  font-size: 35px;
+  font-family: 'bebas neue',sans-serif;
+}
+
+
+
+
+.cart-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lightblack);
+  border-radius: 1rem;
+  width: 100px;
+  height: 40px;
+}
+.cart-button span{
+  /* z-index: -1; */
+  cursor: pointer;
+  padding:10px;
+  color: var(--green);
+  font-size: 20px;
+  font-weight: 600;
+}
+#quantity{
+  width: 35px;
+  text-align: center;
+  border: none;
+  height: 40px;
+  padding: 7px;
+}
+hr{
+  height: 2px;
+  border: none;
+  background-color: var(--lightblack);
+}

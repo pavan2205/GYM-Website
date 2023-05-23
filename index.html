@@ -7,7 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GYM Website</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
   <script src="./script.js" defer></script>
+  
 </head>
 
 <body>
@@ -19,9 +23,11 @@
           <li><a href="#">Home</a></li>
           <li><a href="#services">Service</a></li>
           <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#products-items">Products</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="./pages/register.html">Register</a></li>
+          <li class="register"><a href="./pages/register.html">Register</a></li>
+          <li class="cart"><a href="./pages/cart.html">Cart</a></li>
         </ul>
       </div>
     </nav>
@@ -102,7 +108,7 @@
             more famous</p>
           <span style="color: var(--green);">Read More </span>
         </div>
-        <div class="right-content">
+        <div class="right-content" >
           <div class="contents" style="color:var(--white)">
             <span>57<span style="color: var(--green);">K</span> </span>
             <span style="color:var(--grey)">world
@@ -122,6 +128,15 @@
       </div>
     </div>
   </section>
+
+  <section id="products-items" class="swiper mySwiper products-items">
+    <p class="gallery-title title" style="color: var(--white);margin-bottom: 30px;"> Our <span
+      style="color: var(--green);">Products</span></p>
+  <div class="swiper-wrapper products " id="products">
+      
+  </div>
+</section>
+
   <section class="pricing" id="pricing">
     <p class="title heading " id="pricing_title" style="color: var(--white);"> OUR SPECIAL <span
         style="color: var(--green);">MONTHLY </span>TRAINING PACKAGE </p>
@@ -199,5 +214,21 @@
       <small>&copy;.2023 CAMPFIT . ALL rights reserved</small>
     </div>
   </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
 </body>
 </html>

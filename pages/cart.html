@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="./cart.css">\
+  <script src="./cart.js" defer></script>
+</head>
+<body>
+  <div class="cart-container">
+    <p class="cart-title" style="color: white;">Your <span style="color: var(--green);"> Cart</span></p>
+    <div class="cart-contents" style="overflow: hidden;">
+      <div class="cart-leftproducts"  >
+        <table >
+          
+          <tr >
+            <th >product</th>
+            <th >price</th>
+            <th >quantity</th>
+            <th >total</th>
+            <th ></th>
+          </tr>
+
+          <tr><td colspan="4"><hr style="background-color: var(--grey);"></td></tr>
+         
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="/images/product1.png" alt="" class="product-image" >
+              <p>CombatXL Muscle Gainer</p>
+              </div>
+            </td>
+            <td>100$</td>
+            <td>1</td>
+            <td>100$</td>
+          </tr>
+          <tr ><td colspan="4" ><hr></td></tr>
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="/images/product1.png" alt="" class="product-image" >
+              <p>CombatXL Muscle Gainer</p>
+              </div>
+            </td>
+            <td>100$</td>
+            <td>1</td>
+            <td>100$</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="/images/product1.png" alt="" class="product-image" >
+              <p>CombatXL Muscle Gainer</p>
+              </div>
+            </td>
+            <td>100$</td>
+            <td>1</td>
+            <td>100$</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="/images/product1.png" alt="" class="product-image" >
+              <p>CombatXL Muscle Gainer</p>
+              </div>
+            </td>
+            <td>100$</td>
+            <td><div class="cart-button">
+              <span id="decrement-button">-</span>
+              <p type="text" id="quantity">0</p>
+              <span id="increment-button">+</span>
+             </div></td>
+            <td>100$</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="/images/product1.png" alt="" class="product-image" >
+              <p>CombatXL Muscle Gainer</p>
+              </div>
+            </td>
+            <td>100$</td>
+            <td><div class="cart-button">
+              <span id="decrement-button">-</span>
+              <p type="text" id="quantity">0</p>
+              <span id="increment-button">+</span>
+             </div></td>
+            <td>100$</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="/images/product1.png" alt="" class="product-image" >
+              <p>CombatXL Muscle Gainer</p>
+              </div>
+            </td>
+            <td>100$</td>
+            <td><div class="cart-button">
+              <span id="decrement-button">-</span>
+              <p type="text" id="quantity">0</p>
+              <span id="increment-button">+</span>
+             </div></td>
+            <td>100$</td>
+          </tr>
+          
+        </table>
+        
+      </div>
+      <div class="cart-invoice">
+        <table>
+          <tr>
+            <td><h1 class="invoice-title">Order Summary</h1></td>
+          </tr>
+          <tr>
+            <td>Subtotal</td>
+            <td>$418</td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>$418</td>
+          </tr>
+          <tr>
+             <td colspan="2"><button style="background-color: var(--green);color: var(--white);height: 50px;
+             width:100%;">Checkout</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

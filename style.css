@@ -17,7 +17,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 10px;
 }
 
 /* Track */
@@ -40,6 +40,7 @@ body{
   display: flex;
   padding: 0.8em;
   width: 100%;
+  align-items: center;
   position: fixed;
   background-color: var(--black);
   justify-content: space-evenly ;
@@ -48,6 +49,12 @@ body{
   box-shadow: 0px 8px 8px -8px rgba(177, 177, 177, 0.5);
 }
 
+
+
+.navbaroptions ul{
+  display: flex;
+  flex-direction: row;
+}
 .navbaroptions ul li{
   display: inline;
   padding: 0.7em;
@@ -58,6 +65,8 @@ body{
   color: var(--grey);
   font-size: 20px;
 }
+
+
 .navbaroptions ul li a:hover{
   color: var(--white);
 }
@@ -241,6 +250,99 @@ box-shadow:  3px 3px 15px #686868,
   align-items: center;
   justify-content: center;
 }
+
+.swiper{
+  width: 90%;
+}
+#products-items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+  padding-top: 120px;
+}
+.products{
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  /* justify-content: center; */
+  overflow-x: scroll;
+  
+}
+.products::-webkit-scrollbar {
+  display: none;
+}
+.product-image{
+  height:300px;
+  width:220px;
+}
+
+
+
+.carCard{
+  height: 33rem;
+  width: 23rem;
+  margin: 15px 25px;
+  background-color:var(--black);
+  border-radius: 1rem;
+  border-top-right-radius: 5rem;
+  border: 2px solid var(--green);
+  
+}
+.carCard:hover{
+  border: none;
+  box-shadow:  3px 3px 15px #686868,
+             -3px -3px 15px #a3a3a3;
+}
+.img-card{
+  display: flex;
+  justify-content: center;
+  background-color: var(--green);
+  border: 2px solid var(--white);
+  border-radius:1rem;
+  border-top-right-radius: 4rem;
+  margin: 20px;
+}
+.product-title{
+  padding-left: 30px;
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--white);
+}
+.product-caption{
+  padding-left: 30px;
+  font-size: 15px;
+  font-weight: 100;
+  opacity: 0.5;
+  color: var(--grey);
+}
+.product-details{
+  border-radius: 1rem;
+  margin:25px 20px 0px 20px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.add-btn:hover{
+  border: none;
+}
+.add-btn{
+  border-radius: 1rem;
+  width: 50%;
+  font-size: 30px;
+  color: var(--white);
+  margin-left: 30px;
+}
+.price{
+  font-size: 40px;
+  color: var(--white);
+}
+
+
 #pricing_title{
   font-size:60px;
   text-align: center;
