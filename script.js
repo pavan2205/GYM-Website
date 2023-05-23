@@ -1,74 +1,84 @@
+import {addedCartItems} from './pages/cart';
+
 console.log("Welcome to campFit");
 
 const carousel = document.getElementById("products");
-
-const products = [
-  {
-    img: "./images/product1.png",
-    title: "CombatXL Mass Gainer",
-    caption: "musclepharm",
-    price: "$40",
-  },
-  {
-    img: "./images/product2.png",
-    title: "Assault Pre Workout",
-    caption: "musclepharm",
-    price: "$40",
-  },
-  {
-    img: "./images/product4.png",
-    title: "CombatXL Muscle Gainer",
-    caption: "musclepharm",
-    price: "$40",
-  },
-  {
-    img: "./images/product3.png",
-    title: "CombatXL Muscle Gainer",
-    caption: "musclepharm",
-    price: "$40",
-  },
-  {
-    img: "./images/product5.png",
-    title: "CombatXL Muscle Gainer",
-    caption: "musclepharm",
-    price: "$40",
-  },
-  {
-    img: "./images/product6.png",
-    title: "CombatXL Muscle Gainer",
-    caption: "musclepharm",
-    price: "$40",
-  },
-  {
-    img: "./images/product7.png",
-    title: "CombatXL Muscle Gainer",
-    caption: "musclepharm",
-    price: "$40",
-  },
-  {
-    img: "./images/product8.png",
-    title: "CombatXL Muscle Gainer",
-    caption: "musclepharm",
-    price: "$40",
-  },
-  {
-    img: "./images/product9.png",
-    title: "CombatXL Muscle Gainer",
-    caption: "musclepharm",
-    price: "$40",
-  },
-  {
-    img: "./images/product10.png",
-    title: "CombatXL Muscle Gainer",
-    caption: "musclepharm",
-    price: "$40",
-  },
-  {
-    img: "./images/product11.png",
-    title: "CombatXL Muscle Gainer",
-    caption: "musclepharm",
-    price: "$40",
-  },
+const cart  = document.getElementById('cart');
+class Product {
+  constructor(img, title, caption, price) {
+    this.img = img;
+    this.title = title;
+    this.caption = caption;
+    this.price = price;
+  }
+}
+ const products = [
+   new Product(
+    "./images/product1.png",
+    "CombatXL Mass Gainer",
+    "musclepharm",
+    "$40",
+  ),
+  new Product(
+     "./images/product2.png",
+     "Assault Pre Workout",
+     "musclepharm",
+      "$40",
+  ),
+  new Product(
+     "./images/product4.png",
+     "CombatXL Muscle Gainer",
+     "musclepharm",
+     "$40",
+  ),
+  new Product(
+     "./images/product3.png",
+     "CombatXL Muscle Gainer",
+     "musclepharm",
+     "$40",
+  ),
+  new Product(
+     "./images/product5.png",
+     "CombatXL Muscle Gainer",
+     "musclepharm",
+     "$40",
+  ),
+  new Product(
+     "./images/product6.png",
+     "CombatXL Muscle Gainer",
+     "musclepharm",
+     "$40",
+  ),
+  new Product(
+     "./images/product7.png",
+     "CombatXL Muscle Gainer",
+     "musclepharm",
+     "$40",
+  ),
+  new Product(
+     "./images/product8.png",
+     "CombatXL Muscle Gainer",
+     "musclepharm",
+     "$40",
+  ),
+  new Product(
+     "./images/product9.png",
+     "CombatXL Muscle Gainer",
+     "musclepharm",
+     "$40",
+  ),
+  new Product(
+     "./images/product10.png",
+     "CombatXL Muscle Gainer",
+     "musclepharm",
+     "$40",
+  ),
+  new Product(
+     "./images/product11.png",
+     "CombatXL Muscle Gainer",
+     "musclepharm",
+     "$40",
+  ),
 ];
 
 const mapProducts = products.map((product, index) => {
@@ -88,11 +98,10 @@ function addToCart(key){
 
 let cartItems = [];
 function addToCart(key) {
-  if (cartItems[key] == null) {
-    cartItems[key] == products[key];
-  }
+  console.log(key);
+  cartItems.push(products[key]);
 }
-
-console.log(cartItems);
-
 carousel.innerHTML = mapProducts;
+cart.addEventListener('click',addedCartItems(cartItems));
+
+
