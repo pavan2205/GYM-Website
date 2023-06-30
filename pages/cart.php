@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<?php
+$sname= "localhost";
+$unmae= "root";
+$password = "";
+
+$db_name = "userdata";
+
+$conn = mysqli_connect($sname, $unmae, $password, $db_name);
+session_start(); 
+if (!isset($_SESSION['id'])) {
+    header("Location: ../index.php");
+    exit();
+}
+
+?>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cart</title>
-  <link rel="stylesheet" href="./cart.css">\
+  <link rel="stylesheet" href="./cart.css">
   <script src="./cart.js" defer></script>
 </head>
 <body>
@@ -28,7 +44,6 @@
          <tbody id="cart-itemstable">
 
          </tbody>
-          
           
           
         </table>

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Orbitron:wght@600&family=Poppins:ital,wght@0,500;1,700&family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;800&family=Orbitron:wght@600&family=Poppins:ital,wght@0,500;1,700&family=Quicksand:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+:root {
+  --green: #a1e533;
+  --white: #ffffff;
+  --grey: #a6a6a6;
+  --lightblack: #211f1f;
+  --black: #000000;
+}
+
+
+
+
+body {
+	background: url("https://e0.pxfuel.com/wallpapers/412/849/desktop-wallpaper-black-metal-texture-the-art-mad-background-dark-metal-texture.jpg");
+	display: flex;
+	background-position: 100%;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+}
+
+
+form {
+	width: 500px;
+	border: 2px solid var(--green);
+	padding: 30px;
+	background:var(--black);
+	border-radius: 15px;
+}
+
+h2 {
+	color: var(--green);
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+label {
+	color: var(--green);
+	font-size: 18px;
+	padding: 10px;
+}
+
+button {
+	float: right;
+	background: var(--green);
+	padding: 10px 15px;
+	color:var(--black);
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+}
+button:hover{
+	opacity: .7;
+}
+.error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+.success {
+   background: #D4EDDA;
+   color: #40754C;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+h1 {
+	text-align: center;
+	color: #ffffff;
+}
+
+.ca {
+	font-size: 14px;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	color: #979797;
+}
+.ca:hover {
+	text-decoration: underline;
+} 

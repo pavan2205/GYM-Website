@@ -254,6 +254,8 @@ box-shadow:  3px 3px 15px #686868,
   width: 90%;
 }
 #products-items{
+  width: 100%;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -276,11 +278,15 @@ box-shadow:  3px 3px 15px #686868,
   height:300px;
   width:220px;
 }
+.products-image{
+  height:300px;
+  width:250px;
+}
 
 
 
 .carCard{
-  height: 33rem;
+  height: 28rem;
   width: 23rem;
   margin: 15px 25px;
   background-color:var(--black);
@@ -289,6 +295,17 @@ box-shadow:  3px 3px 15px #686868,
   border: 2px solid var(--green);
   
 }
+.caCard{
+  height: 33rem;
+  width: 26rem;
+  margin: 15px 25px;
+  background-color:var(--black);
+  border-radius: 1rem;
+  border-top-right-radius: 5rem;
+  border: 2px solid var(--green);
+  
+}
+
 .carCard:hover{
   border: none;
   box-shadow:  3px 3px 15px #686868,
@@ -461,3 +478,103 @@ footer{
   color: var(--black);
 }
 
+
+.card_section{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: center;
+  gap: 20px;
+}
+
+.products-image{
+  height:230px;
+  width:170px;
+}
+
+.bg-modal{
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top:0;
+  display: none;
+}
+.bg-modalInsert{
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top:0;
+  display: none;
+}
+.modal-content{
+  width: 500px;
+  height: 430px;
+  border-radius: 5px;
+  background-color: var(--green);
+  padding: 20px;
+  position: relative;
+}
+
+.dialog_container {
+  border: 2px solid black;
+  background-color: rgb(92, 92, 92);
+  opacity: 0.6;
+
+  height: 340px;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.input_form{
+  border: 3px solid black;
+  /* border-radius: 8px; */
+  background-color: var(--lightblack);
+  color: white;
+  height: 2rem;
+  font-size: 1.1rem;
+  padding: 16px;
+}
+.input_form:hover{
+  background-color:lightgray;
+  color:black;
+}
+#updatebtn{
+  margin-top:30px;
+  border: 2px solid black;
+  background-color: var(--lightblack);
+  color: var(--green);
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+  font-weight: 900; 
+}
+
+.close{
+  position:absolute;
+  top: 0px;
+  right: 20px;
+  color: red;
+  font-size: 40px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.insertproduct{
+  position:absolute;
+  top: 90px;
+  right: 150px;
+  color: var(--green);
+  font-size: 90px;
+  cursor: pointer;
+}
