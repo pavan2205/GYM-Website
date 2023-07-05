@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+
 
 <?php
 include "../db_conn.php";
@@ -25,6 +24,8 @@ if (!isset($_SESSION['id'])) {
 //   }
 
 // ?>  
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -46,7 +47,7 @@ if (!isset($_SESSION['id'])) {
   
 </head>
 
-<body>
+<body onload="fetchHomeproducts()">
   <section id="landing_page">
     <nav id="header" style="color:var(--white)">
       <span>CAMP<span style="color: var(--green);">FIT</span></span>
@@ -182,23 +183,7 @@ if (!isset($_SESSION['id'])) {
     <p class="gallery-title title" style="color: var(--white);margin-bottom: 30px;"> Our <span
       style="color: var(--green);">Products</span></p>
   <main class="swiper-wrapper products " id="products">
-    <?php
-  while($row = mysqli_fetch_assoc($all_product)){
-    ?>  
-      <div class="caCard">
-      <div class="img-card">
-        <img class="products-image" src="<?php echo $row["img"];?>" alt="protien">
-      </div>
-      <p class="product-title"><?php echo $row["title"];?></p>
-      <p class="product-caption"><?php echo $row["caption"];?></p>
-      <div class="product-details">
-        <span class="price">$<?php echo $row["price"];?></span>
-      <button class="add-btn subscribe_btn" id="add-btn" >Add</button>
-      </div>
-    </div>
-    <?php
-     }
-     ?>
+    
   </main>
 </section>
 
@@ -252,6 +237,9 @@ if (!isset($_SESSION['id'])) {
       </div>
     </div>
   </section>
+
+
+  
   <section class="contact" id="contact">
     <div class="contact-container">
       <p class="contact-title" style="color: var(--white);">CONTACT <span style="color: var(--green);font-family: 'Bebas Neue', sans-serif;">US</span>
@@ -281,13 +269,17 @@ if (!isset($_SESSION['id'])) {
   </footer>
 
 
+     
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 
+<script src="../services/firebase.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 
     <!-- Initialize Swiper -->
     <script>
+
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 30,
@@ -312,6 +304,7 @@ function sendMail() {
   const serviceID = "service_mcrw069";
   const templateID = "template_z0tqhqj";
 
+  if(name!=null && email!=null && message!=null && name!='' && email!='' && message!=''){
   emailjs
     .send(serviceID, templateID, params)
     .then((res) => {
@@ -324,6 +317,7 @@ function sendMail() {
     .catch((err) => console.log(err));
     alert("Message Sent")
   }
+}
 
     </script>
       <!-- <script src="./script.js" ></script> -->

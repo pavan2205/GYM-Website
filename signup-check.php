@@ -2,6 +2,9 @@
 session_start(); 
 include "db_conn.php";
 
+echo `
+<script type="text/javascript" src="./services/firebase.js"></script>`;
+
 if (isset($_POST['uname']) && isset($_POST['password'])
     && isset($_POST['name']) && isset($_POST['re_password'])) {
 
@@ -58,6 +61,17 @@ if (isset($_POST['uname']) && isset($_POST['password'])
            $sql2 = "INSERT INTO user(username, password) VALUES('$uname', '$pass')";
            $result2 = mysqli_query($conn, $sql2);
            if ($result2) {
+
+						// echo `<script>
+						
+						// db.collection("users").doc($uname).set({
+						// 	username:$uname,
+						// });
+						
+						// </script>`;
+
+
+
            	 header("Location: signup.php?success=Your account has been created successfully");
 	         exit();
            }else {

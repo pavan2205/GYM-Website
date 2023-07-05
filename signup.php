@@ -15,17 +15,17 @@
                <p class="success"><?php echo $_GET['success']; ?></p>
           <?php } ?>
 
-          <label>Name</label> 
-          <?php if (isset($_GET['name'])) { ?>
-               <input type="text" 
-                      name="name" 
-                      placeholder="Name"
-                      value="<?php echo $_GET['name']; ?>"><br>
-          <?php }else{ ?>
-               <input type="text" 
-                      name="name" 
-                      placeholder="Name"><br>
-          <?php }?>
+               <label>Name</label> 
+               <?php if (isset($_GET['name'])) { ?>
+                    <input type="text" 
+                         name="name" 
+                         placeholder="Name"
+                         value="<?php echo $_GET['name']; ?>"><br>
+               <?php }else{ ?>
+                    <input type="text" 
+                         name="name" 
+                         placeholder="Name"><br>
+               <?php }?>
 
           <label>User Name</label>
           <?php if (isset($_GET['uname'])) { ?>
@@ -53,5 +53,31 @@
      	<button type="submit">Sign Up</button>
           <a href="index.php" class="ca">Already have an account?</a>
      </form>
+
+
+
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+     <script src="./services/firebase.js" type="text/javascript"></script>
+     <script>
+
+     const db = firebase.firestore();
+      db.settings({
+        timestampsInSnapshots: true
+      });
+
+      db.collection("users")
+  .get()
+  .then(snapshot => {
+    console.log(snapshot.docs.length);
+  });
+
+
+     </script>
+
+
 </body>
+
+
+
 </html>
